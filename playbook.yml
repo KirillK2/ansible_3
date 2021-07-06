@@ -1,0 +1,7 @@
+---
+- name: Set up db instance
+  hosts: db_instance
+  become: yes #for use sudo privilegies
+  roles:
+    - common
+    - postgres-db
